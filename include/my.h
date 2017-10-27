@@ -1,11 +1,11 @@
 //
-// libmy.h for include in /home/flupine/CPool_Day08_2017/include
+// my.h for include in /home/flupine/Documents/evalexpr/include
 // 
 // Made by Faurest Lupine
 // Login   <faurest.lupine@epitech.eu>
 // 
 // Started on  mer. oct. 11 10:00:14 2017 Faurest Lupine
-// Last update jeu. oct. 12 14:48:34 2017 Faurest Lupine
+// Last update ven. oct. 27 14:56:58 2017 Faurest Lupine
 //
 
 #ifndef FOO_INCLUDED
@@ -16,7 +16,7 @@
 
 void	my_putchar(char c);
 int		my_isneg(int nb);
-int		my_put_nbr(int nb);
+int		my_put_nbr(char *str);
 int		my_swap(int *a, int *b);
 int		my_putstr(char const *str);
 int		my_strlen(char const *str);
