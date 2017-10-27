@@ -5,7 +5,7 @@
 ## Login   <faurest.lupine@epitech.eu>
 ##
 ## Started on  ven. oct. 27 15:21:27 2017 Faurest Lupine
-## Last update ven. oct. 27 15:30:07 2017 Faurest Lupine
+## Last update ven. oct. 27 15:32:50 2017 Faurest Lupine
 ##
 
 NAME = eval_expr
@@ -17,12 +17,8 @@ all: $(NAME)
 
 $(NAME):
 	$(CC) $(SRC) $(FLAGS)
-	cd /lib/my
-	make
 
 clean:
 	rm $(NAME)
-	cd lib/my
-	make clean
 
 re: clean all
