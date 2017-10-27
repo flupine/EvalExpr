@@ -5,7 +5,7 @@
 ## Login   <faurest.lupine@epitech.eu>
 ##
 ## Started on  ven. oct. 27 15:21:27 2017 Faurest Lupine
-## Last update ven. oct. 27 15:27:02 2017 Faurest Lupine
+## Last update ven. oct. 27 15:30:07 2017 Faurest Lupine
 ##
 
 NAME = eval_expr
@@ -16,11 +16,13 @@ CC = gcc
 all: $(NAME)
 
 $(NAME):
-	make -f lib/my/Makefile
 	$(CC) $(SRC) $(FLAGS)
+	cd /lib/my
+	make
 
 clean:
-	make -f lib/my/Makefile clean
 	rm $(NAME)
+	cd lib/my
+	make clean
 
 re: clean all
