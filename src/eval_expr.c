@@ -5,7 +5,7 @@
 ** Login   <faurest.lupine@epitech.eu>
 ** 
 ** Started on  mer. oct. 25 14:25:40 2017 Faurest Lupine
-** Last update ven. oct. 27 15:51:37 2017 Faurest Lupine
+** Last update ven. oct. 27 15:55:28 2017 Faurest Lupine
 */
 
 #include "include/my.h"
@@ -27,7 +27,7 @@ int		parse_par(char **expr)
 			(*expr)++;
 		return (atom);
 	}
-	return (my_atoi(expr));
+	return (my_atoi(expr[1]));
 }
 
 int		parse_factors(char **expr)
