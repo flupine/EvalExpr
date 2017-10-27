@@ -1,11 +1,11 @@
 //
-// my.h for my in /home/flupine/CPool_Day10_2017/lib/my
+// my.h for my in /home/flupine/Documents/evalexpr/lib/my
 // 
 // Made by Faurest Lupine
 // Login   <faurest.lupine@epitech.eu>
 // 
 // Started on  mer. oct. 11 10:00:14 2017 Faurest Lupine
-// Last update ven. oct. 27 15:17:49 2017 Faurest Lupine
+// Last update ven. oct. 27 15:44:22 2017 Faurest Lupine
 //
 
 #ifndef FOO_INCLUDED
@@ -15,7 +15,7 @@
 #endif
 
 void	my_putchar(char c);
-int		my_atoi(char *str)
+int		my_atoi(char *str);
 int		my_isneg(int nb);
 int		my_put_nbr(int nb);
 int		my_swap(int *a, int *b);
