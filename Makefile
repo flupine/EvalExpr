@@ -1,14 +1,14 @@
 ##
-## Makefile for evalexpr in /home/flupine/Documents/evalexpr
+## Makefile for EvalExpr in /home/flupine/Documents/EvalExpr
 ##
 ## Made by Faurest Lupine
 ## Login   <faurest.lupine@epitech.eu>
 ##
 ## Started on  mer. oct. 25 14:29:16 2017 Faurest Lupine
-## Last update ven. oct. 27 14:54:25 2017 Faurest Lupine
+## Last update mer. oct. 25 14:29:19 2017 Faurest Lupine
 ##
 NAME = eval_expr
-SRC = src/main.c src/eval_expr.c
+SRC = ./main.c ./functions.c ./eval_expr.c
 OPTIONS = -I ./ -o $(NAME)
 
 all:
