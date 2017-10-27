@@ -5,10 +5,10 @@
 ** Login   <faurest.lupine@epitech.eu>
 ** 
 ** Started on  mer. oct. 25 13:58:58 2017 Faurest Lupine
-** Last update ven. oct. 27 15:59:46 2017 Faurest Lupine
+** Last update ven. oct. 27 16:10:10 2017 Faurest Lupine
 */
 
-#include "include/my.h"
+#include "../include/my.h"
 
 int main(int ac , char **av)
 {

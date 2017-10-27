@@ -8,5 +8,4 @@ script :
     - ./eval_expr "42 % 2"
     - ./eval_expr "(4 * 6) + (43 * 4) / ((34 + 4) * 6) % 2"
     - ./eval_expr "ER5 + 3"
-after_failure: make clean
-after_success: make clean
+after_script: make clean
