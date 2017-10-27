@@ -4,6 +4,7 @@ compiler: gcc
 before_install:
     - cd lib/my
     - make
+    - cd ../../
 install : make
 script :
     - ./eval_expr "1 + 1"
