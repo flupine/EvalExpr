@@ -5,12 +5,12 @@
 ## Login   <faurest.lupine@epitech.eu>
 ##
 ## Started on  ven. oct. 27 15:21:27 2017 Faurest Lupine
-## Last update ven. oct. 27 16:50:27 2017 Faurest Lupine
+## Last update ven. oct. 27 16:51:41 2017 Faurest Lupine
 ##
 
 NAME = eval_expr
 SRC = src/eval_expr.c src/main.c
-FLAGS = -I include/ -L lib/ -o $(NAME) -lmy
+FLAGS = -I include/ -L lib/my -o $(NAME) -lmy
 CC = gcc
 
 all: $(NAME)
