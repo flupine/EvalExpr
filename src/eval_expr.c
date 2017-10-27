@@ -1,15 +1,20 @@
 /*
-** eval_expr.c for EvalExpr in /home/flupine/Documents/EvalExpr
+** eval_expr.c for src in /home/flupine/CPool_evalexpr_2017/src
 ** 
 ** Made by Faurest Lupine
 ** Login   <faurest.lupine@epitech.eu>
 ** 
 ** Started on  mer. oct. 25 14:25:40 2017 Faurest Lupine
-** Last update mer. oct. 25 15:32:01 2017 Faurest Lupine
+** Last update mer. oct. 25 15:23:31 2017 Faurest Lupine
 */
-#include "header.h"
 
-int		parse_atom(char **expr)
+#include "my.h"
+
+
+int		parse_op(char **expr);
+int		parse_factors(char **expr);
+
+int		parse_par(char **expr)
 {
 	int atom;
 
@@ -18,12 +23,12 @@ int		parse_atom(char **expr)
 	if (**expr == '(')
 	{
 		(*expr)++;
-		atom = parse_summands(expr);
+		atom = parse_op(expr);
 		if (**expr == ')')
 			(*expr)++;
 		return (atom);
 	}
-	return (ft_atoi(expr));
+	return (my_put_nbr(expr));
 }
 
 int		parse_factors(char **expr)
@@ -32,14 +37,14 @@ int		parse_factors(char **expr)
 	int		factor2;
 	char	op;
 
-	factor = parse_atom(expr);
+	factor = parse_par(expr);
 	while (**expr == ' ')
 		(*expr)++;
 	op = **expr;
 	if (op != '*' && op != '/')
 		return (factor);
 	(*expr)++;
-	factor2 = parse_atom(expr);
+	factor2 = parse_par(expr);
 	if (op == '*')
 		factor *= factor2;
 	if (op == '/')
@@ -47,7 +52,7 @@ int		parse_factors(char **expr)
 	return (factor);
 }
 
-int		parse_summands(char **expr)
+int		parse_op(char **expr)
 {
 	int		summand;
 	int		summand2;
@@ -59,7 +64,7 @@ int		parse_summands(char **expr)
 		while (**expr == ' ')
 			(*expr)++;
 		op = **expr;
-		if (op != '+' && op != '-' && op != '%')
+		if (op != '+' && op != '-')
 			return (summand);
 		(*expr)++;
 		summand2 = parse_factors(expr);
@@ -67,13 +72,11 @@ int		parse_summands(char **expr)
 			summand += summand2;
 		if (op == '-')
 			summand -= summand2;
-		if (op == '%')
-			summand %= summand2;
 	}
 	return (summand);
 }
 
 int		eval_expr(char *str)
 {
-	return (parse_summands(&str));
+	return (parse_op(&str));
 }
