@@ -1,4 +1,10 @@
 language: c
 os: linux
 compiler: gcc
-script : make
+script :
+    - make
+    - ./eval_expr "1 + 1"
+    - ./eval_expr "545 * 43"
+    - ./eval_expr "42 % 2"
+    - ./eval_expr "(4 * 6) + (43 * 4) / ((34 + 4) * 6) % 2"
+    - ./eval_expr "ER5 + 3"
