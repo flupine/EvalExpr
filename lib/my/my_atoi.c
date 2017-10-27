@@ -1,14 +1,14 @@
 /*
-** my_atoi.c for my in /home/flupine/CPool_Day10_2017/lib/my
+** my_atoi.c for my in /home/flupine/Documents/evalexpr/lib/my
 ** 
 ** Made by Faurest Lupine
 ** Login   <faurest.lupine@epitech.eu>
 ** 
 ** Started on  ven. oct. 27 15:16:50 2017 Faurest Lupine
-** Last update ven. oct. 27 15:17:00 2017 Faurest Lupine
+** Last update ven. oct. 27 15:38:45 2017 Faurest Lupine
 */
 
-int		ft_atoi(char *str)
+int		my_atoi(char *str)
 {
 	int i;
 	int negative;

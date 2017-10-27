@@ -1,11 +1,11 @@
 ##
-## Makefile for my in /home/flupine/CPool_Day10_2017/lib/my
+## Makefile for my in /home/flupine/Documents/evalexpr/lib/my
 ##
 ## Made by Faurest Lupine
 ## Login   <faurest.lupine@epitech.eu>
 ##
 ## Started on  ven. oct. 13 10:19:21 2017 Faurest Lupine
-## Last update ven. oct. 27 15:20:23 2017 Faurest Lupine
+## Last update ven. oct. 27 15:38:24 2017 Faurest Lupine
 ##
 
 CC	= gcc
@@ -62,5 +62,6 @@ clean	:
 	$(RM)	../$(NAME)
 	$(RM)	./$(NAME)
 	$(RM)	../../include
+	$(RM)	*.o
 
 re	: clean all
