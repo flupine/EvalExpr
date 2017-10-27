@@ -5,7 +5,7 @@
 ## Login   <faurest.lupine@epitech.eu>
 ##
 ## Started on  ven. oct. 13 10:19:21 2017 Faurest Lupine
-## Last update ven. oct. 27 15:38:24 2017 Faurest Lupine
+## Last update ven. oct. 27 16:06:05 2017 Faurest Lupine
 ##
 
 CC	= gcc
@@ -58,6 +58,8 @@ $(NAME)	:
 	cp $(NAME) ../
 	mkdir ../../include
 	cp my.h ../../include
+	$(RM)	*.o
+	$(RM)	$(NAME)
 clean	:
 	$(RM)	../$(NAME)
 	$(RM)	./$(NAME)
