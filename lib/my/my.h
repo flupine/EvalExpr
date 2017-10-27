@@ -5,7 +5,7 @@
 // Login   <faurest.lupine@epitech.eu>
 // 
 // Started on  mer. oct. 11 10:00:14 2017 Faurest Lupine
-// Last update ven. oct. 27 15:52:15 2017 Faurest Lupine
+// Last update ven. oct. 27 17:17:50 2017 Faurest Lupine
 //
 
 #ifndef FOO_INCLUDED
@@ -44,4 +44,4 @@ int		my_showstr(char const *str) ;
 int		my_showmem(char const *str, int size) ;
 char	*my_strcat(char *dest, char const *src);
 char	*my_strncat(char *dest, char const *src, int nb);
-int		my_atoi(char *str);
+int		my_atoi(char **str);

@@ -5,33 +5,19 @@
 ** Login   <faurest.lupine@epitech.eu>
 ** 
 ** Started on  ven. oct. 27 15:16:50 2017 Faurest Lupine
-** Last update ven. oct. 27 15:38:45 2017 Faurest Lupine
+** Last update ven. oct. 27 17:17:34 2017 Faurest Lupine
 */
 
-int		my_atoi(char *str)
+int		my_atoi(char **str)
 {
-	int i;
-	int negative;
-	int number;
+	int res;
 
-	i = 0;
-	negative = 0;
-	number = 0;
-	while ((str[i] == ' ') || (str[i] == '\n') || (str[i] == '\v')
-	|| (str[i] == '\f') || (str[i] == '\r') || (str[i] == '\t'))
-		i++;
-	if (str[i] == 45)
-		negative = 1;
-	if ((str[i] == 43) || (str[i] == 45))
-		i++;
-	while ((str[i] >= 48) && (str[i] <= 57))
+	res = 0;
+	while (**str >= '0' && **str <= '9')
 	{
-		number *= 10;
-		number += ((int)str[i] - 48);
-		i++;
+		res = res * 10 + (**str - '0');
+		(*str)++;
 	}
-	if (negative == 1)
-		return (-number);
-	else
-		return (number);
+	return (res);
+
 }
