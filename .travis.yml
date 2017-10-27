@@ -1,8 +1,12 @@
 language: c
 os: linux
 compiler: gcc
-install : make
-script :
+before_install:
+    - cd lib/my
+    - make
+    - cd ../../
+install: make
+script:
     - ./eval_expr "1 + 1"
     - ./eval_expr "545 * 43"
     - ./eval_expr "42 % 2"
