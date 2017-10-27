@@ -5,7 +5,7 @@
 ## Login   <faurest.lupine@epitech.eu>
 ##
 ## Started on  ven. oct. 27 15:21:27 2017 Faurest Lupine
-## Last update ven. oct. 27 16:40:51 2017 Faurest Lupine
+## Last update ven. oct. 27 16:42:50 2017 Faurest Lupine
 ##
 
 NAME = eval_expr
@@ -17,7 +17,7 @@ all: $(NAME)
 
 $(NAME):
 	$(CC) $(SRC) $(FLAGS)
-	$(CC) -L lib/my -o $(NAME) -lmy
+	$(CC) -L lib -o $(NAME)
 clean:
 	rm $(NAME)
 
