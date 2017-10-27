@@ -1,15 +1,14 @@
 /*
-** eval_expr.c for src in /home/flupine/CPool_evalexpr_2017/src
+** eval_expr.c for src in /home/flupine/Documents/evalexpr/src
 ** 
 ** Made by Faurest Lupine
 ** Login   <faurest.lupine@epitech.eu>
 ** 
 ** Started on  mer. oct. 25 14:25:40 2017 Faurest Lupine
-** Last update mer. oct. 25 15:23:31 2017 Faurest Lupine
+** Last update ven. oct. 27 14:54:11 2017 Faurest Lupine
 */
 
-#include "my.h"
-
+#include "include/my.h"
 
 int		parse_op(char **expr);
 int		parse_factors(char **expr);
