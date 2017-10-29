@@ -8,7 +8,7 @@
 ** Last update ven. oct. 27 16:16:56 2017 Faurest Lupine
 */
 
-#include "../include/my.h"
+#include "my.h"
 
 int eval_expr(char *str);
 

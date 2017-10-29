@@ -1,9 +1,9 @@
 /*
 ** eval_expr.c for src in /home/flupine/Documents/evalexpr/src
-** 
+**
 ** Made by Faurest Lupine
 ** Login   <faurest.lupine@epitech.eu>
-** 
+**
 ** Started on  mer. oct. 25 14:25:40 2017 Faurest Lupine
 ** Last update ven. oct. 27 17:21:20 2017 Faurest Lupine
 */
@@ -63,7 +63,7 @@ int		parse_op(char **expr)
 		while (**expr == ' ')
 			(*expr)++;
 		op = **expr;
-		if (op != '+' && op != '-')
+		if (op != '+' && op != '-' && op != '%')
 			return (summand);
 		(*expr)++;
 		summand2 = parse_factors(expr);
@@ -71,6 +71,8 @@ int		parse_op(char **expr)
 			summand += summand2;
 		if (op == '-')
 			summand -= summand2;
+		if (op == '%')
+			summand = summand % summand2;
 	}
 	return (summand);
 }
